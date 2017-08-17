@@ -21,8 +21,8 @@
   },
   "scripts": {
     "dev": "tsc --watch",
-    "tsc": "tsc",
-    "preinstall": "npm run tsc"
+    "compile": "tsc",
+    "prepublish": "npm run compile"
   },
   "dependencies": {
     "atom-languageclient": "^0.4.0",
