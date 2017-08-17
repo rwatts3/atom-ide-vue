@@ -1,7 +1,7 @@
 {
   "name": "ide-vue",
   "main": "./build/main",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Vue language support for Atom-IDE.",
   "repository": "rwatts3/atom-ide-vue",
   "license": "MIT",
