@@ -1,7 +1,7 @@
 {
   "name": "ide-vue",
   "main": "./build/main",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Vue language support for Atom-IDE.",
   "repository": "https://github.com/rwatts3/atom-ide-vue",
   "license": "MIT",
@@ -9,7 +9,10 @@
     "atom": ">=1.19.0"
   },
   "keywords": [
-	  "atom-ide", "vue","lsp","language-client"
+    "atom-ide",
+    "vue",
+    "lsp",
+    "language-client"
   ],
   "author": {
     "name": "Ryan Watts",
