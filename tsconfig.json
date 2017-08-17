@@ -1,0 +1,22 @@
+{
+	"compileOnSave": true,
+	"compilerOptions": {
+		"rootDir": "src",
+		"outDir": "build",
+		"target": "es6",
+		"module": "es6",
+		"inlineSourceMap": true,
+		"pretty": true,
+		"allowSyntheticDefaultImports": true,
+		"moduleResolution": "node",
+		"lib": [
+			"es2015"
+		]
+	},
+	"typeAcquisition" : {
+		"enable" : true
+	},
+	"include": [
+		"src/**/*.ts"
+	]
+}

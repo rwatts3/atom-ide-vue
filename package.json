@@ -1,0 +1,70 @@
+{
+  "name": "ide-vue",
+  "main": "./build/main",
+  "version": "0.0.0",
+  "description": "Vue language support for Atom-IDE.",
+  "repository": "https://github.com/rwatts3/atom-ide-vue",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.19.0"
+  },
+  "keywords": [
+	  "atom-ide", "vue","lsp","language-client"
+  ],
+  "author": {
+    "name": "Ryan Watts",
+    "url": "https://github.com/rwatts3",
+    "email": "ryandwatts@gmail.com"
+  },
+  "scripts": {
+    "dev": "tsc --watch",
+    "tsc": "tsc",
+    "preinstall": "npm run tsc"
+  },
+  "dependencies": {
+    "atom-languageclient": "^0.4.0",
+    "fuzzaldrin-plus": "^0.4.1",
+    "vue-language-server": "^0.0.12"
+  },
+  "devDependencies": {
+    "typescript": "^2.4.2",
+    "@types/node": "latest"
+  },
+  "enhancedScopes": [
+    "text.html.vue"
+  ],
+  "consumedServices": {
+    "linter-indie": {
+      "versions": {
+        "2.0.0": "consumeLinterV2"
+      }
+    },
+    "datatip": {
+      "versions": {
+        "0.1.0": "consumeDatatip"
+      }
+    }
+  },
+  "providedServices": {
+    "autocomplete.provider": {
+      "versions": {
+        "2.0.0": "provideAutocomplete"
+      }
+    },
+    "definitions": {
+      "versions": {
+        "0.1.0": "provideDefinitions"
+      }
+    },
+    "find-references": {
+      "versions": {
+        "0.1.0": "provideFindReferences"
+      }
+    },
+    "outline-view": {
+      "versions": {
+        "0.1.0": "provideOutlines"
+      }
+    }
+  }
+}
