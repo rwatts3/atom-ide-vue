@@ -1,73 +1,73 @@
 {
-  "name": "ide-vue",
-  "main": "./build/main",
-  "version": "0.1.2",
-  "description": "Vue language support for Atom-IDE.",
-  "repository": "rwatts3/atom-ide-vue",
-  "license": "MIT",
-  "engines": {
-    "atom": ">=1.19.0"
-  },
-  "keywords": [
-    "atom-ide",
-    "vue",
-    "lsp",
-    "language-client"
-  ],
-  "author": {
-    "name": "Ryan Watts",
-    "url": "https://github.com/rwatts3",
-    "email": "ryandwatts@gmail.com"
-  },
-  "scripts": {
-    "dev": "tsc --watch",
-    "compile": "tsc",
-    "prepublish": "npm run compile"
-  },
-  "dependencies": {
-    "atom-languageclient": "^0.4.0",
-    "fuzzaldrin-plus": "^0.4.1",
-    "vue-language-server": "^0.0.12"
-  },
-  "devDependencies": {
-    "typescript": "^2.4.2",
-    "@types/node": "latest"
-  },
-  "enhancedScopes": [
-    "text.html.vue"
-  ],
-  "consumedServices": {
-    "linter-indie": {
-      "versions": {
-        "2.0.0": "consumeLinterV2"
-      }
-    },
-    "datatip": {
-      "versions": {
-        "0.1.0": "consumeDatatip"
-      }
-    }
-  },
-  "providedServices": {
-    "autocomplete.provider": {
-      "versions": {
-        "2.0.0": "provideAutocomplete"
-      }
-    },
-    "definitions": {
-      "versions": {
-        "0.1.0": "provideDefinitions"
-      }
-    },
-    "find-references": {
-      "versions": {
-        "0.1.0": "provideFindReferences"
-      }
-    },
-    "outline-view": {
-      "versions": {
-        "0.1.0": "provideOutlines"
-      }
-    }
-  }
+	"name": "ide-vue",
+	"main": "./build/main",
+	"version": "0.1.2",
+	"description": "Vue language support for Atom-IDE.",
+	"repository": "rwatts3/atom-ide-vue",
+	"license": "MIT",
+	"engines": {
+		"atom": ">=1.19.0"
+	},
+	"keywords": [
+		"atom-ide",
+		"vue",
+		"lsp",
+		"language-client"
+	],
+	"author": {
+		"name": "Ryan Watts",
+		"url": "https://github.com/rwatts3",
+		"email": "ryandwatts@gmail.com"
+	},
+	"scripts": {
+		"prepublish": "npm run build",
+		"dev": "tsc --watch",
+		"build": "tsc"
+	},
+	"dependencies": {
+		"atom-languageclient": "^0.6.0",
+		"fuzzaldrin-plus": "^0.4.1",
+		"vue-language-server": "^0.0.17"
+	},
+	"devDependencies": {
+		"@types/node": "^8.0.28",
+		"typescript": "^2.5.2"
+	},
+	"enhancedScopes": [
+		"text.html.vue"
+	],
+	"consumedServices": {
+		"linter-indie": {
+			"versions": {
+				"2.0.0": "consumeLinterV2"
+			}
+		},
+		"datatip": {
+			"versions": {
+				"0.1.0": "consumeDatatip"
+			}
+		}
+	},
+	"providedServices": {
+		"autocomplete.provider": {
+			"versions": {
+				"2.0.0": "provideAutocomplete"
+			}
+		},
+		"definitions": {
+			"versions": {
+				"0.1.0": "provideDefinitions"
+			}
+		},
+		"find-references": {
+			"versions": {
+				"0.1.0": "provideFindReferences"
+			}
+		},
+		"outline-view": {
+			"versions": {
+				"0.1.0": "provideOutlines"
+			}
+		}
+	}
 }
