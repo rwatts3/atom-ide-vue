@@ -9,7 +9,7 @@
 			foo: "Bar"
 		},
 		mounted() {
-			this.
+			
 		}
 		
 	}

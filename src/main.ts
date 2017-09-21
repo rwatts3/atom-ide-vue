@@ -1,11 +1,10 @@
 import path from 'path';
 import { AutoLanguageClient } from 'atom-languageclient';
-import { filter } from 'fuzzaldrin-plus';
 import cp = require('child_process');
 
 class VueLanguageClient extends AutoLanguageClient {
 	private _serverManager;
-	
+
 	getGrammarScopes () { return ['text.html.vue'] };
 	getLanguageName () { return 'Vue' };
 	getServerName () { return 'MBRW' };
