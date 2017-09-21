@@ -1,10 +1,16 @@
 <template>
-	
+	<transition></transition>
 </template>
 
 <script>
 	export default {
-		created() {}
+		data() {
+			hello: "World",
+			foo: "Bar"
+		},
+		mounted() {
+			this.
+		}
 		
 	}
 </script>
