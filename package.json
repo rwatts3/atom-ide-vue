@@ -9,11 +9,11 @@
 		"atom": ">=1.19.0"
 	},
 	"configSchema": {
-	"additionalGrammars": {
-		"type": "array",
-		"title": "Register Additional Grammars",
-		"default": [],
-		"description": "Register additional grammars"
+		"additionalGrammars": {
+			"type": "array",
+			"title": "Register Additional Grammars",
+			"default": [],
+			"description": "Register additional grammars"
 		}
 	},
 	"keywords": [
@@ -37,6 +37,7 @@
 		"vue-language-server": "^0.0.18"
 	},
 	"devDependencies": {
+		"@types/atom": "0.0.39",
 		"@types/node": "^8.0.28",
 		"typescript": "^2.5.2"
 	},
