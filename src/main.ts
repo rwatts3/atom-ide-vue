@@ -7,7 +7,7 @@ class VueLanguageClient extends AutoLanguageClient {
 
 	getGrammarScopes () { return ['text.html.vue'] };
 	getLanguageName () { return 'Vue' };
-	getServerName () { return 'MBRW' };
+	getServerName () { return 'Vetur' };
 
 	startServerProcess () {
 		return cp.spawn('node', [require.resolve('vue-language-server/dist/vueServerMain')]);
