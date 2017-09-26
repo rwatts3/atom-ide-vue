@@ -1,16 +1,14 @@
-import path from 'path';
-import { AutoLanguageClient } from 'atom-languageclient';
-import cp = require('child_process');
+const path = require('path');
+const { AutoLanguageClient } = require('atom-languageclient');
 
 class VueLanguageClient extends AutoLanguageClient {
-	private _serverManager;
-
 	getGrammarScopes () { return atom.config.get('ide-vue.additionalGrammars').concat(['text.html.vue']); };
 	getLanguageName () { return 'Vue' };
 	getServerName () { return 'Vetur' };
 
 	startServerProcess () {
-		return cp.spawn('node', [require.resolve('vue-language-server/dist/vueServerMain')]);
+		const args = ['node_modules/vue-language-server/dist/vueServerMain'];
+		return super.spawnChildNode(args, { cwd : path.join(__dirname, '..') });
 	};
 
 	preInitialization (connection) {
@@ -18,4 +16,4 @@ class VueLanguageClient extends AutoLanguageClient {
 	}
 }
 
-export =  new VueLanguageClient();
+module.exports = new VueLanguageClient();

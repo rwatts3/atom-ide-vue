@@ -1,6 +1,6 @@
 {
   "name": "ide-vue",
-  "main": "./build/main",
+  "main": "./src/main",
   "version": "0.1.6",
   "description": "Vue language support for Atom-IDE.",
   "repository": "rwatts3/atom-ide-vue",
@@ -28,13 +28,11 @@
     "email": "ryandwatts@gmail.com"
   },
   "scripts": {
-    "prepublish": "npm run build",
-    "dev": "tsc --watch",
-    "build": "tsc"
+    
   },
   "dependencies": {
     "atom-languageclient": "^0.6.4",
-    "vue-language-server": "^0.0.18"
+    "vue-language-server": "^0.0.19"
   },
   "devDependencies": {
     "@types/atom": "0.0.39",
