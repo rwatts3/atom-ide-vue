@@ -1,7 +1,7 @@
 {
   "name": "ide-vue",
   "main": "./src/main",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Vue language support for Atom-IDE.",
   "repository": "rwatts3/atom-ide-vue",
   "license": "MIT",
@@ -27,9 +27,7 @@
     "url": "https://github.com/rwatts3",
     "email": "ryandwatts@gmail.com"
   },
-  "scripts": {
-    
-  },
+  "scripts": {},
   "dependencies": {
     "atom-languageclient": "^0.6.4",
     "vue-language-server": "^0.0.19"
