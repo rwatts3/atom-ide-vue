@@ -1,76 +1,76 @@
 {
-	"name": "ide-vue",
-	"main": "./src/main",
-	"version": "0.1.7",
-	"description": "Vue language support for Atom-IDE.",
-	"repository": "rwatts3/atom-ide-vue",
-	"license": "MIT",
-	"engines": {
-		"atom": ">=1.19.0"
-	},
-	"configSchema": {
-		"additionalGrammars": {
-			"type": "array",
-			"title": "Register Additional Grammars",
-			"default": [],
-			"description": "Register additional grammars"
-		}
-	},
-	"keywords": [
-		"atom-ide",
-		"vue",
-		"lsp",
-		"language-client"
-	],
-	"author": {
-		"name": "Ryan Watts",
-		"url": "https://github.com/rwatts3",
-		"email": "ryandwatts@gmail.com"
-	},
-	"scripts": {},
-	"dependencies": {
-		"atom-languageclient": "^0.9.5",
-		"vue-language-server": "^0.0.31"
-	},
-	"devDependencies": {
-		"@types/atom": "1.27.0",
-		"@types/node": "^10.3.0"
-	},
-	"enhancedScopes": [
-		"text.html.vue"
-	],
-	"consumedServices": {
-		"linter-indie": {
-			"versions": {
-				"2.0.0": "consumeLinterV2"
-			}
-		},
-		"datatip": {
-			"versions": {
-				"0.1.0": "consumeDatatip"
-			}
-		}
-	},
-	"providedServices": {
-		"autocomplete.provider": {
-			"versions": {
-				"2.0.0": "provideAutocomplete"
-			}
-		},
-		"definitions": {
-			"versions": {
-				"0.1.0": "provideDefinitions"
-			}
-		},
-		"find-references": {
-			"versions": {
-				"0.1.0": "provideFindReferences"
-			}
-		},
-		"outline-view": {
-			"versions": {
-				"0.1.0": "provideOutlines"
-			}
-		}
-	}
+  "name": "ide-vue",
+  "main": "./src/main",
+  "version": "0.1.8",
+  "description": "Vue language support for Atom-IDE.",
+  "repository": "rwatts3/atom-ide-vue",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.19.0"
+  },
+  "configSchema": {
+    "additionalGrammars": {
+      "type": "array",
+      "title": "Register Additional Grammars",
+      "default": [],
+      "description": "Register additional grammars"
+    }
+  },
+  "keywords": [
+    "atom-ide",
+    "vue",
+    "lsp",
+    "language-client"
+  ],
+  "author": {
+    "name": "Ryan Watts",
+    "url": "https://github.com/rwatts3",
+    "email": "ryandwatts@gmail.com"
+  },
+  "scripts": {},
+  "dependencies": {
+    "atom-languageclient": "^0.9.5",
+    "vue-language-server": "^0.0.31"
+  },
+  "devDependencies": {
+    "@types/atom": "1.27.0",
+    "@types/node": "^10.3.0"
+  },
+  "enhancedScopes": [
+    "text.html.vue"
+  ],
+  "consumedServices": {
+    "linter-indie": {
+      "versions": {
+        "2.0.0": "consumeLinterV2"
+      }
+    },
+    "datatip": {
+      "versions": {
+        "0.1.0": "consumeDatatip"
+      }
+    }
+  },
+  "providedServices": {
+    "autocomplete.provider": {
+      "versions": {
+        "2.0.0": "provideAutocomplete"
+      }
+    },
+    "definitions": {
+      "versions": {
+        "0.1.0": "provideDefinitions"
+      }
+    },
+    "find-references": {
+      "versions": {
+        "0.1.0": "provideFindReferences"
+      }
+    },
+    "outline-view": {
+      "versions": {
+        "0.1.0": "provideOutlines"
+      }
+    }
+  }
 }
