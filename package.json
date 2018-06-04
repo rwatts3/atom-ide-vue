@@ -3,7 +3,7 @@
   "main": "./src/main",
   "version": "0.1.9",
   "description": "Vue language support for Atom-IDE.",
-  "repository": "rwatts3/atom-ide-vue",
+  "repository": "https://github.com/rwatts3/atom-ide-vue",
   "license": "MIT",
   "engines": {
     "atom": ">=1.19.0"
