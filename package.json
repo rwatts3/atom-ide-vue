@@ -37,7 +37,7 @@
     "@types/node": "^10.3.0"
   },
   "enhancedScopes": [
-    "text.html.vue"
+    
   ],
   "consumedServices": {
     "linter-indie": {
